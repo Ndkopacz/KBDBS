@@ -5,10 +5,11 @@ body {
     color:#333333;
     font-weight:400;
     background: #ffffff url('background.jpg') top center no-repeat fixed;
-    background-size:cover;
-    min-width: 100%;
+    //background-size:cover;
+    //min-width: 100%;
     //min-height: 100%;
-	background-position: 0px 25px;
+	//background-position: auto 25px;
+	//width:823px 406px;
 }
 .strokeme
 {
