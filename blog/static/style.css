@@ -32,14 +32,16 @@ html[xmlns] .clearfix {
 a, 
 a:hover, 
 a:visited {
+	color:#ffffff;
     outline:none;
 }
 a {
-    color:#008ce5;
+    color:#ffffff;
     text-decoration:none;
 }
 a:hover {
     text-decoration:underline;
+	color:#ffffff;
 }
 
 
@@ -180,7 +182,7 @@ nav ul li.active a,
 nav ul li a:hover {
     color:#ffffff;
     text-decoration:none;
-    border-bottom:4px solid #008ce5;
+    border-bottom:4px solid #ffffff;
 }
 
 nav ul li a.banner {
@@ -374,6 +376,12 @@ footer a:hover {
     }
 }
 @media screen and (max-width: 750px) { 
+
+	header {
+		background-color:#ffffff;
+
+	}
+
     img {
         width:100%;
         max-width:216px;
@@ -399,22 +407,30 @@ footer a:hover {
         float: none;  
         width: 100%; 
         padding-left:10px; 
-        border-bottom:1px solid #008ce5;
         background-color:#ffffff;
     }
     nav ul li:hover {
         background-color:#008ce5;
     }
     nav ul li a {
+		color:#000000;
         padding:10px;
         line-height:20px;
         border:none;
     }
     nav ul li.active a, 
     nav ul li a:hover {
+		color:#000000;
         border:none;
-        
     }
+	
+	a, 
+	a:hover, 
+	a:visited {
+		color:#000000;
+		outline:none;
+	}
+		
     #pull { 
         display: block;
     } 
