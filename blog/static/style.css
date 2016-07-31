@@ -48,9 +48,9 @@ strong {
 }
 h1 {
     font-weight:400;
-    font-size:26px;
+    font-size:22px;
     margin-top:0px;
-	margin-bottom:250px;
+	margin-bottom:50px;
     line-height:20px;
 }
 
@@ -76,7 +76,7 @@ p {
     margin:0 0 15px 0;
 }
 img {
-    width:15%;
+    width:20%;
     min-width:216px;
     
 }
