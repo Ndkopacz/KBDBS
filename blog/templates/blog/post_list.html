@@ -26,7 +26,7 @@
 						<li><a href="#about">About us</a></li>
 						<!--<li><a href="#team">Our team</a></li>-->
 						<!--<li><a href="#services">Services</a></li>-->
-						<li><a href="#contact">Contact</a></li>
+						<li><a href="#contact2">Contact</a></li>
 					</ul>
 					<div id="pull">
 				        <span class="btn">Menu</span>
@@ -37,12 +37,12 @@
 		<section id="home">
 			<img src="{% static "logo.png" %}" alt="Your logo" />
 			<!--<h1 class="strokeme">KBDBS, LLC.</h1>-->
-			<h1>Kopacz-Boyer Design Build Services, LLC.</h1>
+			<h1>Kopacz Boyer Design Build Services, LLC.</h1>
 		</section>
 		<section id="about">
 			<div class="wrap">
 				<h2>About us</h2>
-				<p>Kopacz-Boyer Design Build Services, LLC (KBDBS, LLC), a Service-Disabled Veteran Owned Small Business, has been in operation since October 2015. KBDBS, LLC is a full service company offering design/build, engineering, electrical contracting, general contracting and construction management services. The principle members of the organization together have over 80 years of experience with Federal government and design/build projects. We know how to meet cost, schedule and performance requirements. Maintaining our reputation for timeliness, quality, and professionalism is our priority.</p>
+				<p>Kopacz Boyer Design Build Services (KBDBS) LLC., a Service-Disabled Veteran Owned Small Business, has been in operation since October 2015. KBDBS, LLC is a full service company offering design/build, engineering, electrical contracting, general contracting and construction management services. The principle members of the organization together have over 80 years of experience with Federal government and design/build projects. We know how to meet cost, schedule and performance requirements. Maintaining our reputation for timeliness, quality, and professionalism is our priority.</p>
 				<p>Core Values: KBDBS is committed to helping our clients achieve their goals while delivering the highest quality project attainable and maintaining rigorous business and ethical standards.</p>
 			</div>
 		</section>
@@ -102,7 +102,7 @@
                                             <li>238150 - Glass and Glazing Contractors</li>
                                             <li>238190 - Other Foundation, Structure, Building Exterior</li>
                                             <li>238220 - Plumbing, Heating, and Air-Conditioning</li>
-                                            <li>238290 - Other Building Equipment Contractors</li>
+                                            <li id="contact2">238290 - Other Building Equipment Contractors</li>
                                             <li>238310 - Drywall and Insulation Contractors</li>
                                             <li>238320 - Painting and Wall Covering Contractors</li>
                                             <li>238910 - Site Preparation Contractors</li>
@@ -117,7 +117,7 @@
 				</div>
 			</div>
 		</section>
-                        		<section>
+        <section>
 		</section>
 		<section id="contact">
 			<div class="wrap">
@@ -128,7 +128,7 @@
 					Monument, CO 80015<br /><br />
 					E-mail: KBDBS.LLC@gmail.com<br />
 				</div>
-				<div class="col4">
+				<!-- <div class="col4">
 					<form class="contactform">
 						<label class="col1 first" for="name">Name:</label>
 						<input type="text" name="name" id="name" class="col2" />
@@ -138,7 +138,15 @@
 						<label class="col1 first" for="message">Message:</label>
 						<textarea class="col5" rows="5" name="message" id="message"></textarea>
 						<input class="button clearfix" type="button" value="Send message" />
+					</form>-->
+					<div class="col4">
+					<form class="contactform" action="/" method="post">
+						{% csrf_token %}
+						{{ form }}
+						<input class="button clearfix" type="submit" value="Send message" />
 					</form>
+					</div>
+					
 				</div>
 			</div>
 		</section>

@@ -88,11 +88,14 @@ img {
     width:1000px;
     margin:0 auto;
 }
+label,
 .col1 {
     width:13.333%;
     margin-left:4%;
     float:left;
 }
+#id_name,
+#id_sender,
 .col2 {
     width:30.667%;
     margin-left:4%;
@@ -108,6 +111,7 @@ img {
     margin-left:4%;
     float:left;
 }
+textarea,
 .col5 {
     width:82.667%;
     margin-left:4%;
@@ -123,6 +127,7 @@ img {
     margin-right:3%;
     float:left;
 }
+label,
 .first {
     margin-left:0;
 }
@@ -294,23 +299,24 @@ section {
     overflow:hidden;
     padding-bottom:5px;
 }
-.contactform label {
-    line-height:40px;
+label {
+    //line-height:40px;
     text-align:right;
 }
-.contactform input[type=text] {
+input[type=text],
+input[type=email] {
     border:1px solid #ccc;
     color:#333333;
     padding:5px 10px;
     font:inherit;
 }
-.contactform textarea {
+textarea {
     border:1px solid #ccc;
     color:#333333;
     padding:10px;
     font:inherit;
 }
-input[type=button] {
+input[type=submit] {
     margin-top:20px;
     padding:10px 30px;
     border-radius:3px;
@@ -329,7 +335,7 @@ input[type=button] {
         -moz-box-shadow: 0 5px 0 #004979;
         -webkit-box-shadow: 0 5px 0 #004979;
 }
-input[type=button]:hover {
+input[type=submit]:hover {
     background-color:#004979;
     box-shadow: 0 5px 0 #008ce5;
         -moz-box-shadow: 0 5px 0 #008ce5;
@@ -360,6 +366,10 @@ footer a:hover {
     }
 }
 @media screen and (max-width:768px) {
+	#id_name,
+	#id_sender,
+	label,
+	textarea,
     .col1,
     .col2,
     .col3,
