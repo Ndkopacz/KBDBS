@@ -49,9 +49,11 @@ strong {
 h1 {
     font-weight:400;
     font-size:22px;
-    margin-top:0px;
-	margin-bottom:50px;
-    line-height:20px;
+    margin-top:10px;
+	margin-bottom:0px;
+    line-height:30px;
+	padding-left: 10px;
+	padding-right: 10px;	
 }
 
 .strokeme
@@ -209,8 +211,8 @@ section {
 }
 #home {
     text-align:center;
-    margin-top:80px;
-    padding:130px 0;
+    margin-top:40px;
+    padding:100px 0;
 }
 #about,
 #team,
@@ -416,6 +418,6 @@ footer a:hover {
     } 
     #home {
         margin-top:40px;
-        padding:100px 0;
+        padding:40px 0;
     }
 }
